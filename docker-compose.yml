@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - '6878:6878'
+      - '80:6878'
     environment:
       - ALLOW_REMOTE_ACCESS=yes # change to "yes" to allow internet access
       # add any extra command line option mentioned in https://docs.acestream.net/developers/engine-command-line-options/
