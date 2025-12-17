@@ -7,6 +7,6 @@ fi
 
 exec \
 	/app/start-engine \
-	--client-console --bind-all\
+	--client-console --bind-all --http-port 80\
 	"$EXTRA_FLAGS" \
 	"$@"
