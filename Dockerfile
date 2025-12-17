@@ -23,8 +23,8 @@ ENV DEBIAN_FRONTEND="noninteractive" \
     PYTHON_EGG_CACHE=/.cache
 
 ENV VERSION="3.2.11_ubuntu_22.04_x86_64_py3.10" \
-    ALLOW_REMOTE_ACCESS="no" \
-    EXTRA_FLAGS=''
+    ALLOW_REMOTE_ACCESS="yes" \
+    EXTRA_FLAGS='--http-port=80'
 
 USER root
 WORKDIR /app
