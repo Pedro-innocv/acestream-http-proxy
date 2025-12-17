@@ -24,7 +24,7 @@ ENV DEBIAN_FRONTEND="noninteractive" \
 
 ENV VERSION="3.2.11_ubuntu_22.04_x86_64_py3.10" \
     ALLOW_REMOTE_ACCESS="yes" \
-    EXTRA_FLAGS='--http-port=80'
+    EXTRA_FLAGS='--http-port 80'
 
 USER root
 WORKDIR /app
@@ -62,4 +62,5 @@ USER appuser
 ENTRYPOINT ["/usr/bin/catatonit", "--", "/entrypoint.sh"]
 
 EXPOSE 6878/tcp
+EXPOSE 80/tcp
 
